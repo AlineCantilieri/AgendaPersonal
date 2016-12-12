@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="br.edu.iff.pooa20162.agendapersonal.Cadastrar_Usuario">
+
+          <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="32sp"
+            android:text="Informe o Tipo de Usuário para Cadastrar"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:id="@+id/txv_cadastrar_usuario"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ACADEMIA"
+            android:id="@+id/btCadastrarAcademia"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:layout_below="@+id/txv_cadastrar_usuario"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="47dp" />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PROFESSOR"
+            android:id="@+id/btCadastrarProfessor"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:layout_marginTop="76dp"
+            android:layout_below="@+id/btCadastrarAcademia"
+            android:layout_alignParentStart="true" />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ALUNO"
+            android:id="@+id/btCadastrarAluno"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:layout_marginTop="74dp"
+            android:layout_below="@+id/btCadastrarProfessor"
+            android:layout_alignParentStart="true" />
+ </RelativeLayout>

@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="br.edu.iff.pooa20162.agendapersonal.Cadastrar_Professor">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/linearLayout">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="32sp"
+                android:text="Cadastrar Professor"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:id="@+id/txv_cadastrar_professor"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textSize="25sp"
+                android:text="@string/nome"
+                android:textStyle="normal"
+                android:textColor="@color/black"
+                android:id="@+id/tv_nome"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/etx_nome"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textSize="25sp"
+                android:text="@string/telefone"
+                android:textStyle="normal"
+                android:textColor="@color/black"
+                android:id="@+id/tv_telefone"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/et_telefone"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textSize="25sp"
+                android:text="@string/cpf"
+                android:textStyle="normal"
+                android:textColor="@color/black"
+                android:id="@+id/tv_cpf"/>
+            <EditText
+                android:layout_width="331dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/et_cpf"
+                android:layout_below="@+id/linearLayout"
+                android:layout_alignParentEnd="false"
+                android:layout_alignParentStart="false"
+                android:layout_gravity="center_horizontal" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textSize="25sp"
+                android:text="@string/CREF"
+                android:textStyle="normal"
+                android:textColor="@color/black"
+                android:id="@+id/tv_cref"/>
+            <EditText
+                android:layout_width="331dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/et_cref"
+                android:layout_below="@+id/linearLayout"
+                android:layout_alignParentEnd="false"
+                android:layout_alignParentStart="false"
+                android:layout_gravity="center_horizontal" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textSize="25sp"
+                android:text="@string/endereco"
+                android:textStyle="normal"
+                android:textColor="@color/black"
+                android:id="@+id/tv_endereco"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/et_endereco"/>
+        </LinearLayout>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="OK"
+            android:id="@+id/btCadastrar"
+            android:textSize="25sp"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true" />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CANCELAR"
+            android:id="@+id/btCancelar"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:layout_alignBottom="@+id/btCadastrar"
+            android:layout_toEndOf="@+id/btCadastrar"
+            android:layout_marginStart="110dp" />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="VOLTAR"
+            android:id="@+id/btvoltar"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:layout_alignBottom="@+id/btCadastrar"
+            android:layout_toEndOf="@+id/btCadastrar"
+            android:layout_marginStart="4dp" />
+</RelativeLayout>
+
+

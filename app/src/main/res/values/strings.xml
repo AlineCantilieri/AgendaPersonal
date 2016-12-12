@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">AgendaPersonal</string>
+    <string name="endereco">Endereço:</string>
+    <string name="CREF">CREF:</string>
+    <string name="cpf">CPF:</string>
+    <string name="telefone">Telefone:</string>
+    <string name="nome">Nome:</string>
+    <string name="cnpj">CNPJ:</string>
+</resources>
