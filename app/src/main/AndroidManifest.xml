@@ -18,7 +18,7 @@
         <activity android:name=".Cadastrar_Professor" />
         <activity android:name=".Cadastrar_Academia" />
         <activity android:name=".Cadastrar_Aluno" />
-        <activity android:name=".Cadastrar_Usuario"></activity>
+        <activity android:name=".Cadastrar_Usuario" />
     </application>
 
 </manifest>
