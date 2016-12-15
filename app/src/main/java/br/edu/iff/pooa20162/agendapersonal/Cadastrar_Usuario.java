@@ -39,8 +39,8 @@ public class Cadastrar_Usuario extends AppCompatActivity {
         });
 
 
-        Button btCadastraraAluno = (Button) findViewById(R.id.btCadastrarAluno);
-        btCadastraraAluno.setOnClickListener(new View.OnClickListener() {
+        Button btCadastrarAluno = (Button) findViewById(R.id.btCadastrarAluno);
+        btCadastrarAluno.setOnClickListener(new View.OnClickListener() {
 
             @Override
             public void onClick(View view) {
