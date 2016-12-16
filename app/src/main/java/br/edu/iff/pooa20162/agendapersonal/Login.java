@@ -13,6 +13,8 @@ public class Login extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
 
+        Intent intent = getIntent();
+
         Button btCadastrar = (Button) findViewById(R.id.btCadastrar);
         btCadastrar.setOnClickListener(new View.OnClickListener() {
 
@@ -22,5 +24,6 @@ public class Login extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
     }
 }

@@ -8,8 +8,7 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     android:background="@drawable/discobolo2"
-    tools:context="br.edu.iff.pooa20162.agendapersonal.Cadastrar_Professor">
-
+    tools:context="br.edu.iff.pooa20162.agendapersonal.Cadastrar_Horario">
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -20,80 +19,63 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textSize="32sp"
-                android:text="Cadastrar Professor"
+                android:text="Cadastrar Horario"
                 android:gravity="center"
                 android:textStyle="bold"
                 android:textColor="@color/black"
-                android:id="@+id/txv_cadastrar_professor"/>
+                android:id="@+id/txv_cadastrar_horario"/>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:textSize="25sp"
-                android:text="@string/nome"
+                android:text="@string/hora"
                 android:textStyle="normal"
                 android:textColor="@color/black"
-                android:id="@+id/tv_nome"/>
+                android:id="@+id/tv_hora"/>
 
             <EditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/etx_nome"/>
+                android:id="@+id/etx_hora"/>
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:textSize="25sp"
-                android:text="@string/telefone"
+                android:text="@string/data"
                 android:textStyle="normal"
                 android:textColor="@color/black"
-                android:id="@+id/tv_telefone"/>
+                android:id="@+id/tv_data"/>
+
             <EditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/et_telefone"/>
+                android:id="@+id/etx_data"/>
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:textSize="25sp"
-                android:text="@string/cpf"
+                android:text="@string/id_professor"
                 android:textStyle="normal"
                 android:textColor="@color/black"
-                android:id="@+id/tv_cpf"/>
-            <EditText
-                android:layout_width="331dp"
-                android:layout_height="wrap_content"
-                android:id="@+id/et_cpf"
-                android:layout_below="@+id/linearLayout"
-                android:layout_alignParentEnd="false"
-                android:layout_alignParentStart="false"
-                android:layout_gravity="center_horizontal" />
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:textSize="25sp"
-                android:text="@string/CREF"
-                android:textStyle="normal"
-                android:textColor="@color/black"
-                android:id="@+id/tv_cref"/>
-            <EditText
-                android:layout_width="331dp"
-                android:layout_height="wrap_content"
-                android:id="@+id/et_cref"
-                android:layout_below="@+id/linearLayout"
-                android:layout_alignParentEnd="false"
-                android:layout_alignParentStart="false"
-                android:layout_gravity="center_horizontal" />
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:textSize="25sp"
-                android:text="@string/endereco"
-                android:textStyle="normal"
-                android:textColor="@color/black"
-                android:id="@+id/tv_endereco"/>
+                android:id="@+id/tv_id_professor"/>
             <EditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/et_endereco"/>
+                android:id="@+id/et_id_professor"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textSize="25sp"
+                android:text="@string/id_academia"
+                android:textStyle="normal"
+                android:textColor="@color/black"
+                android:id="@+id/tv_id_accademia"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/etid_academia"/>
         </LinearLayout>
         <Button
             android:layout_width="wrap_content"
@@ -103,7 +85,9 @@
             android:textSize="25sp"
             android:gravity="center"
             android:textColor="@color/black"
-            android:layout_alignParentBottom="true"
+            android:layout_marginTop="44dp"
+            android:layout_marginStart="4dp"
+            android:layout_below="@+id/linearLayout"
             android:layout_alignParentStart="true" />
         <Button
             android:layout_width="wrap_content"
@@ -125,6 +109,5 @@
             android:layout_alignBottom="@+id/btCadastrar"
             android:layout_toEndOf="@+id/btCadastrar"
             android:layout_marginStart="4dp" />
+
 </RelativeLayout>
-
-

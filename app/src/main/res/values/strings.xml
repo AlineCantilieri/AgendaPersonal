@@ -6,5 +6,9 @@
     <string name="telefone">Telefone:</string>
     <string name="nome">Nome:</string>
     <string name="cnpj">CNPJ:</string>
+    <string name="hora">Hora</string>
+    <string name="id_professor">id_Professor</string>
+    <string name="id_academia">id_Academia</string>
+    <string name="data">Data</string>
 
 </resources>

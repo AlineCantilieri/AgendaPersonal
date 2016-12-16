@@ -26,5 +26,26 @@ public class Cadastrar_Professor extends AppCompatActivity {
             }
         });
 
+        Button btCancelar = (Button) findViewById(R.id.btCancelar);
+        btCancelar.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Cadastrar_Professor.this, Login.class);
+                startActivity(intent);
+            }
+        });
+
+        Button btvoltar = (Button) findViewById(R.id.btvoltar);
+        btvoltar.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Cadastrar_Professor.this, Cadastrar_Usuario.class);
+                startActivity(intent);
+            }
+        });
+
+
     }
 }

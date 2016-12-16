@@ -25,6 +25,26 @@ public class Cadastrar_Academia extends AppCompatActivity {
             }
         });
 
+        Button btCancelar = (Button) findViewById(R.id.btCancelar);
+        btCancelar.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Cadastrar_Academia.this, Login.class);
+                startActivity(intent);
+            }
+        });
+
+        Button btvoltar = (Button) findViewById(R.id.btvoltar);
+        btvoltar.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Cadastrar_Academia.this, Cadastrar_Usuario.class);
+                startActivity(intent);
+            }
+        });
+
 
     }
 }

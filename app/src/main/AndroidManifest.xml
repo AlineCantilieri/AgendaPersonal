@@ -21,7 +21,8 @@
         <activity android:name=".Cadastrar_Usuario" />
         <activity android:name=".Professor" />
         <activity android:name=".Academia" />
-        <activity android:name=".Aluno"></activity>
+        <activity android:name=".Aluno" />
+        <activity android:name=".Cadastrar_Horario"></activity>
     </application>
 
 </manifest>
