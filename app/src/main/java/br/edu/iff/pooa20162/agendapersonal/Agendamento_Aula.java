@@ -6,37 +6,45 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-public class Login extends AppCompatActivity {
+public class Agendamento_Aula extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_login);
+        setContentView(R.layout.activity_agendamento__aula);
 
         Intent intent = getIntent();
+
 
         Button btCadastrar = (Button) findViewById(R.id.btCadastrar);
         btCadastrar.setOnClickListener(new View.OnClickListener() {
 
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(Login.this, Cadastrar_Usuario.class);
+                Intent intent = new Intent(Agendamento_Aula.this, Aluno.class);
                 startActivity(intent);
             }
         });
 
-        Button btLogin = (Button) findViewById(R.id.btLogin);
-        btLogin.setOnClickListener(new View.OnClickListener() {
+        Button btCancelar = (Button) findViewById(R.id.btCancelar);
+        btCancelar.setOnClickListener(new View.OnClickListener() {
 
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(Login.this, Professor.class);
+                Intent intent = new Intent(Agendamento_Aula.this, Aluno.class);
                 startActivity(intent);
             }
         });
 
+        Button btvoltar = (Button) findViewById(R.id.btvoltar);
+        btvoltar.setOnClickListener(new View.OnClickListener() {
 
-
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Agendamento_Aula.this, Aluno.class);
+                startActivity(intent);
+            }
+        });
 
     }
 }

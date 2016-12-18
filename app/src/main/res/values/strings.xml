@@ -10,5 +10,9 @@
     <string name="id_professor">id_Professor</string>
     <string name="id_academia">id_Academia</string>
     <string name="data">Data</string>
+    <string name="Professor">Professor</string>
+    <string name="Data">Data</string>
+    <string name="Hora">Hora</string>
+    <string name="Academia">Academia</string>
 
 </resources>

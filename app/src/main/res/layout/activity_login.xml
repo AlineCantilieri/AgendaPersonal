@@ -90,7 +90,7 @@
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="CANCELAR"
+            android:text="SAIR"
             android:id="@+id/btCancelar"
             android:textSize="20sp"
             android:textColor="@color/branco"

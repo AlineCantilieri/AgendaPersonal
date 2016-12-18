@@ -50,6 +50,16 @@ public class Cadastrar_Usuario extends AppCompatActivity {
 
         });
 
+        Button btvoltar = (Button) findViewById(R.id.btvoltar);
+        btvoltar.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Cadastrar_Usuario.this, Login.class);
+                startActivity(intent);
+            }
+
+        });
 
     }
 }

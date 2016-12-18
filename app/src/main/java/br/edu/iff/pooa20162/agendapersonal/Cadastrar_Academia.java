@@ -45,6 +45,5 @@ public class Cadastrar_Academia extends AppCompatActivity {
             }
         });
 
-
     }
 }
