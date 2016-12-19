@@ -46,6 +46,5 @@ public class Cadastrar_Professor extends AppCompatActivity {
             }
         });
 
-
     }
 }

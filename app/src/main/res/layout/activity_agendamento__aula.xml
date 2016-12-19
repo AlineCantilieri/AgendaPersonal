@@ -20,11 +20,24 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textSize="32sp"
-                android:text="Agendar Aula"
+                android:text="Agendamento Aula"
                 android:gravity="center"
                 android:textStyle="bold"
                 android:textColor="@color/black"
                 android:id="@+id/txv_agendar_aula"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textSize="25sp"
+                android:text="@string/Modalidade"
+                android:textStyle="normal"
+                android:textColor="@color/black"
+                android:id="@+id/tv_id_modalidade"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/etx_modalidade"/>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
@@ -84,8 +97,6 @@
             android:textSize="25sp"
             android:gravity="center"
             android:textColor="@color/black"
-            android:layout_marginTop="44dp"
-            android:layout_marginStart="4dp"
             android:layout_below="@+id/linearLayout"
             android:layout_alignParentStart="true" />
         <Button

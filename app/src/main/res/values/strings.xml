@@ -14,5 +14,6 @@
     <string name="Data">Data</string>
     <string name="Hora">Hora</string>
     <string name="Academia">Academia</string>
+    <string name="Modalidade">Modalidade</string>
 
 </resources>
