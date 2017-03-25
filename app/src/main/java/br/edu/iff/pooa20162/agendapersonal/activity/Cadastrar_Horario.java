@@ -1,4 +1,4 @@
-package br.edu.iff.pooa20162.agendapersonal;
+package br.edu.iff.pooa20162.agendapersonal.activity;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
@@ -6,21 +6,21 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-public class Cadastrar_Academia extends AppCompatActivity {
+import br.edu.iff.pooa20162.agendapersonal.R;
+
+public class Cadastrar_Horario extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_cadastrar__academia);
-
-        Intent intent = getIntent();
+        setContentView(R.layout.activity_cadastrar__horario);
 
         Button btCadastrar = (Button) findViewById(R.id.btCadastrar);
         btCadastrar.setOnClickListener(new View.OnClickListener() {
 
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(Cadastrar_Academia.this, Academia.class);
+                Intent intent = new Intent(Cadastrar_Horario.this, Professor.class);
                 startActivity(intent);
             }
         });
@@ -30,7 +30,7 @@ public class Cadastrar_Academia extends AppCompatActivity {
 
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(Cadastrar_Academia.this, Login.class);
+                Intent intent = new Intent(Cadastrar_Horario.this, Login.class);
                 startActivity(intent);
             }
         });
@@ -40,10 +40,9 @@ public class Cadastrar_Academia extends AppCompatActivity {
 
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(Cadastrar_Academia.this, Cadastrar_Usuario.class);
+                Intent intent = new Intent(Cadastrar_Horario.this, Professor.class);
                 startActivity(intent);
             }
         });
-
     }
 }

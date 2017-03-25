@@ -1,4 +1,4 @@
-package br.edu.iff.pooa20162.agendapersonal;
+package br.edu.iff.pooa20162.agendapersonal.activity;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
@@ -6,7 +6,11 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+import br.edu.iff.pooa20162.agendapersonal.R;
+
 public class Professor extends AppCompatActivity {
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

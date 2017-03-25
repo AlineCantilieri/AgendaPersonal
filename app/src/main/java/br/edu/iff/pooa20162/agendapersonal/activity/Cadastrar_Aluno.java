@@ -1,19 +1,28 @@
-package br.edu.iff.pooa20162.agendapersonal;
+package br.edu.iff.pooa20162.agendapersonal.activity;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
 
-public class Agendamento_Aula extends AppCompatActivity {
+import br.edu.iff.pooa20162.agendapersonal.R;
+
+public class Cadastrar_Aluno extends AppCompatActivity {
+    EditText etnome, etendereco, etcpf, ettelefone;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_agendamento__aula);
+        setContentView(R.layout.activity_cadastrar__aluno);
 
         Intent intent = getIntent();
+
+        etnome = (EditText) findViewById(R.id.etx_nome);
+        etendereco = (EditText) findViewById(R.id.et_endereco);
+        etcpf = (EditText) findViewById(R.id.et_cpf);
+        ettelefone = (EditText) findViewById(R.id.et_telefone);
 
 
         Button btCadastrar = (Button) findViewById(R.id.btCadastrar);
@@ -21,8 +30,11 @@ public class Agendamento_Aula extends AppCompatActivity {
 
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(Agendamento_Aula.this, Aluno.class);
+                Intent intent = new Intent(Cadastrar_Aluno.this, Aluno.class);
                 startActivity(intent);
+
+                br.edu.iff.pooa20162.agendapersonal.model.Aluno al = new br.edu.iff.pooa20162.agendapersonal.model.Aluno(etnome.getText().toString(), ettelefone.getText().toString(), etcpf.getText().toString(), etendereco.getText().toString());
+                al.save();
             }
         });
 
@@ -31,7 +43,7 @@ public class Agendamento_Aula extends AppCompatActivity {
 
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(Agendamento_Aula.this, Aluno.class);
+                Intent intent = new Intent(Cadastrar_Aluno.this, Login.class);
                 startActivity(intent);
             }
         });
@@ -41,10 +53,11 @@ public class Agendamento_Aula extends AppCompatActivity {
 
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(Agendamento_Aula.this, Aluno.class);
+                Intent intent = new Intent(Cadastrar_Aluno.this, Cadastrar_Usuario.class);
                 startActivity(intent);
             }
         });
+
 
     }
 }

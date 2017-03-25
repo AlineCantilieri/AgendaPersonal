@@ -8,7 +8,7 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     android:background="@drawable/discobolo2"
-    tools:context="br.edu.iff.pooa20162.agendapersonal.Cadastrar_Professor">
+    tools:context=".activity.Cadastrar_Professor">
 
         <LinearLayout
             android:layout_width="match_parent"
