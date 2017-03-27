@@ -106,4 +106,9 @@ public class Professor extends SugarRecord implements Parcelable{
         dest.writeString(cref);
         dest.writeParcelable(academia, flags);
     }
+
+    public String toString()
+    {
+        return this.nome;
+    }
 }

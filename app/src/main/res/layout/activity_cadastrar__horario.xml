@@ -60,10 +60,13 @@
                 android:textStyle="normal"
                 android:textColor="@color/black"
                 android:id="@+id/tv_id_professor"/>
-            <EditText
+
+            <Spinner
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/et_id_professor"/>
+                android:id="@+id/spinnerProf"
+                android:layout_gravity="center_horizontal" />
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
@@ -72,10 +75,12 @@
                 android:textStyle="normal"
                 android:textColor="@color/black"
                 android:id="@+id/tv_id_accademia"/>
-            <EditText
+
+            <Spinner
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/etid_academia"/>
+                android:id="@+id/spinnerAcad" />
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"

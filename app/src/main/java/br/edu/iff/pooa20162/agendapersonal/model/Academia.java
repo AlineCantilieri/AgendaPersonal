@@ -84,5 +84,9 @@ public class Academia extends SugarRecord implements Parcelable {
         dest.writeString(telefone);
         dest.writeString(cnpj);
     }
+    public String toString()
+    {
+        return this.nome;
+    }
 }
 
