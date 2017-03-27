@@ -33,10 +33,12 @@ public class ProfessorAdapter extends ArrayAdapter<Professor> {
         TextView nome = (TextView) rowView.findViewById(R.id.textView);
         TextView endereco = (TextView) rowView.findViewById(R.id.textView2);
         TextView telefone = (TextView) rowView.findViewById(R.id.textView3);
+        TextView cref = (TextView) rowView.findViewById(R.id.textView4);
         TextView cpf = (TextView) rowView.findViewById(R.id.textView4);
         nome.setText(elementos.get(position).getNome());
         endereco.setText(elementos.get(position).getEndereco());
         telefone.setText(elementos.get(position).getTelefone());
+        cref.setText(elementos.get(position).getCref());
         cpf.setText(elementos.get(position).getCpf());
         return rowView;
     }

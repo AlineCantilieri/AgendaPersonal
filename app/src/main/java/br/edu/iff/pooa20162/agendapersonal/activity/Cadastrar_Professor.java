@@ -12,7 +12,7 @@ import br.edu.iff.pooa20162.agendapersonal.model.Professor;
 
 public class Cadastrar_Professor extends AppCompatActivity {
 
-    EditText etnome, etendereco, etcpf, ettelefone;
+    EditText etnome, etendereco, etcpf, ettelefone, etcref;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -24,6 +24,8 @@ public class Cadastrar_Professor extends AppCompatActivity {
         etendereco = (EditText) findViewById(R.id.et_endereco);
         etcpf = (EditText) findViewById(R.id.et_cpf);
         ettelefone = (EditText) findViewById(R.id.et_telefone);
+        etcref = (EditText) findViewById(R.id.et_cref);
+
 
         Button btCadastrar = (Button) findViewById(R.id.btCadastrar);
         btCadastrar.setOnClickListener(new View.OnClickListener() {
@@ -31,7 +33,7 @@ public class Cadastrar_Professor extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
-                Professor prof = new Professor(etnome.getText().toString(), ettelefone.getText().toString(), etcpf.getText().toString(), etendereco.getText().toString());
+                Professor prof = new Professor(etnome.getText().toString(), ettelefone.getText().toString(), etcpf.getText().toString(), etendereco.getText().toString(), etcref.getText().toString());
                 prof.save();
 
                 Intent intent = new Intent(Cadastrar_Professor.this, Professor.class);

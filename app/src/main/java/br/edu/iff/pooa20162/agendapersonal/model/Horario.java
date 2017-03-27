@@ -12,19 +12,24 @@ import com.orm.SugarRecord;
 
 public class Horario extends SugarRecord implements Parcelable{
 
-    int hora;
+    int hora, data;
+    String modalidade;
     Professor professor;
     Academia academia;
 
-    public Horario(int hora, Professor professor, Academia academia) {
+    public Horario(int hora, int data, String modalidade, Professor professor, Academia academia) {
         super();
         this.hora = hora;
+        this.modalidade = modalidade;
+        this.data = data;
         this.professor = professor;
         this.academia = academia;
     }
 
     protected Horario(Parcel in) {
         hora = in.readInt();
+        modalidade = in.readString();
+        data = in.readInt();
         professor = in.readParcelable(Professor.class.getClassLoader());
         academia = in.readParcelable(Academia.class.getClassLoader());
     }
@@ -44,9 +49,21 @@ public class Horario extends SugarRecord implements Parcelable{
     public int getHora() {
         return hora;
     }
+
+    public int getData() {
+        return data;
+    }
+
+    public String getModalidade() {
+        return modalidade;
+    }
     public void setHora(int hora) {
         this.hora = hora;
     }
+    public void setData(int data) {
+        this.data = data;
+    }
+    public void setModalidade(String modalidade) {this.modalidade = modalidade; }
     public Professor getProfessor() {
         return professor;
     }
@@ -68,7 +85,9 @@ public class Horario extends SugarRecord implements Parcelable{
     @Override
     public void writeToParcel(Parcel dest, int flags) {
         dest.writeInt(hora);
+        dest.writeInt(data);
         dest.writeParcelable(professor, flags);
         dest.writeParcelable(academia, flags);
+        dest.writeString (modalidade);
     }
 }
