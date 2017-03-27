@@ -10,14 +10,16 @@ import com.orm.SugarRecord;
  */
 public class Professor extends SugarRecord implements Parcelable{
 
-    String nome, telefone, cpf, endereco;
+    String nome, telefone, cpf, endereco, cref;
     Academia academia;
 
-    public Professor(String nome, String telefone, String cpf, String endereco) {
+    public Professor(String nome, String telefone, String cpf, String endereco, String cref) {
         this.nome = nome;
         this.telefone = telefone;
         this.cpf = cpf;
         this.endereco = endereco;
+        this.cref = cref;
+
     }
 
     protected Professor(Parcel in) {
@@ -25,6 +27,7 @@ public class Professor extends SugarRecord implements Parcelable{
         telefone = in.readString();
         cpf = in.readString();
         endereco = in.readString();
+        cref = in.readString();
         academia = in.readParcelable(Academia.class.getClassLoader());
     }
 
@@ -72,6 +75,14 @@ public class Professor extends SugarRecord implements Parcelable{
         this.endereco = endereco;
     }
 
+    public String getCref() {
+        return cref;
+    }
+
+    public void setCref(String cref) {
+        this.cref = cref;
+    }
+
     public Academia getAcademia() {
         return academia;
     }
@@ -91,6 +102,7 @@ public class Professor extends SugarRecord implements Parcelable{
         dest.writeString(telefone);
         dest.writeString(cpf);
         dest.writeString(endereco);
+        dest.writeString(cref);
         dest.writeParcelable(academia, flags);
     }
 }
