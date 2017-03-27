@@ -5,10 +5,9 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-
 import br.edu.iff.pooa20162.agendapersonal.R;
 
-public class Aluno extends AppCompatActivity {
+public class ActvityAluno extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,7 +22,7 @@ public class Aluno extends AppCompatActivity {
 
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(Aluno.this, Agendamento_Aula.class);
+                Intent intent = new Intent(ActvityAluno.this, ActivityAgendamento_Aula.class);
                 startActivity(intent);
             }
         });
@@ -33,7 +32,7 @@ public class Aluno extends AppCompatActivity {
 
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(Aluno.this, Lista_Professor.class);
+                Intent intent = new Intent(ActvityAluno.this, Lista_Professor.class);
                 startActivity(intent);
             }
         });
@@ -43,7 +42,7 @@ public class Aluno extends AppCompatActivity {
 
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(Aluno.this, Lista_Academia.class);
+                Intent intent = new Intent(ActvityAluno.this, Lista_Academia.class);
                 startActivity(intent);
             }
         });
@@ -54,7 +53,7 @@ public class Aluno extends AppCompatActivity {
 
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(Aluno.this, Lista_Horario.class);
+                Intent intent = new Intent(ActvityAluno.this, Lista_Horario.class);
                 startActivity(intent);
             }
         });

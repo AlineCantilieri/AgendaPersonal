@@ -19,6 +19,7 @@ public class Academia extends SugarRecord implements Parcelable {
         this.telefone = telefone;
         this.cnpj = cnpj;
     }
+    public Academia(){}
 
     protected Academia(Parcel in) {
         nome = in.readString();

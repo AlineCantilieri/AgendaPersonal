@@ -12,6 +12,7 @@ import java.util.ArrayList;
 
 import br.edu.iff.pooa20162.agendapersonal.R;
 import br.edu.iff.pooa20162.agendapersonal.adapter.ProfessorAdapter;
+import br.edu.iff.pooa20162.agendapersonal.model.Professor;
 
 public class Lista_Professor extends AppCompatActivity {
 
@@ -27,11 +28,11 @@ public class Lista_Professor extends AppCompatActivity {
         super.onResume();
         ListView lista = (ListView) findViewById(R.id.lvProfessor);
 
-        final ArrayList<br.edu.iff.pooa20162.agendapersonal.model.Professor> prof = (ArrayList<br.edu.iff.pooa20162.agendapersonal.model.Professor>)
-                br.edu.iff.pooa20162.agendapersonal.model.Professor.listAll(br.edu.iff.pooa20162.agendapersonal.model.Professor.class);
+        final ArrayList<Professor> prof = (ArrayList<Professor>) Professor.listAll(Professor.class);
 
         ArrayAdapter adapter = new ProfessorAdapter(this, prof);
         lista.setAdapter(adapter);
+
 
         lista.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override

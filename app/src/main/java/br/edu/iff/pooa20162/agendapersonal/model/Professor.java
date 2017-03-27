@@ -21,6 +21,7 @@ public class Professor extends SugarRecord implements Parcelable{
         this.cref = cref;
 
     }
+    public Professor(){}
 
     protected Professor(Parcel in) {
         nome = in.readString();

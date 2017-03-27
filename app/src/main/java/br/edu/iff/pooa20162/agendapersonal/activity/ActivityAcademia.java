@@ -8,14 +8,12 @@ import android.widget.Button;
 
 import br.edu.iff.pooa20162.agendapersonal.R;
 
-public class Professor extends AppCompatActivity {
-
-
+public class ActivityAcademia extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_professor);
+        setContentView(R.layout.activity_academia);
 
         Intent intent = getIntent();
 
@@ -24,7 +22,7 @@ public class Professor extends AppCompatActivity {
 
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(Professor.this, Cadastrar_Horario.class);
+                Intent intent = new Intent(ActivityAcademia.this, Cadastrar_Horario.class);
                 startActivity(intent);
             }
         });
@@ -34,7 +32,17 @@ public class Professor extends AppCompatActivity {
 
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(Professor.this, Lista_Horario.class);
+                Intent intent = new Intent(ActivityAcademia.this, Lista_Horario.class);
+                startActivity(intent);
+            }
+        });
+
+        Button btConsultarProfessor = (Button) findViewById(R.id.btConsultarProfessor);
+        btConsultarProfessor.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(ActivityAcademia.this, Lista_Professor.class);
                 startActivity(intent);
             }
         });
@@ -44,20 +52,10 @@ public class Professor extends AppCompatActivity {
 
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(Professor.this, Lista_Aluno.class);
+                Intent intent = new Intent(ActivityAcademia.this, Lista_Aluno.class);
                 startActivity(intent);
             }
         });
-        Button btConsultarAcademia = (Button) findViewById(R.id.btConsultarAcademia);
-        btConsultarAcademia.setOnClickListener(new View.OnClickListener() {
 
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(Professor.this, Lista_Academia.class);
-                startActivity(intent);
-            }
-        });
     }
-
-
 }

@@ -8,8 +8,8 @@ import android.widget.ArrayAdapter;
 import android.widget.TextView;
 
 import java.util.ArrayList;
-
 import br.edu.iff.pooa20162.agendapersonal.R;
+
 import br.edu.iff.pooa20162.agendapersonal.model.Professor;
 
 /**
@@ -33,7 +33,7 @@ public class ProfessorAdapter extends ArrayAdapter<Professor> {
         TextView nome = (TextView) rowView.findViewById(R.id.textView);
         TextView endereco = (TextView) rowView.findViewById(R.id.textView2);
         TextView telefone = (TextView) rowView.findViewById(R.id.textView3);
-        TextView cref = (TextView) rowView.findViewById(R.id.textView4);
+        TextView cref = (TextView) rowView.findViewById(R.id.textView5);
         TextView cpf = (TextView) rowView.findViewById(R.id.textView4);
         nome.setText(elementos.get(position).getNome());
         endereco.setText(elementos.get(position).getEndereco());

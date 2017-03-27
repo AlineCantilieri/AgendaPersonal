@@ -11,7 +11,7 @@
         android:theme="@style/AppTheme">
 
         <meta-data android:name="DATABASE" android:value="sugar_example.db" />
-        <meta-data android:name="VERSION" android:value="2" />
+        <meta-data android:name="VERSION" android:value="3" />
         <meta-data android:name="QUERY_LOG" android:value="true" />
         <meta-data android:name="DOMAIN_PACKAGE_NAME"
             android:value="br.edu.iff.pooa20162.agendapersonal" />
@@ -26,11 +26,11 @@
         <activity android:name=".activity.Cadastrar_Academia" />
         <activity android:name=".activity.Cadastrar_Aluno" />
         <activity android:name=".activity.Cadastrar_Usuario" />
-        <activity android:name=".activity.Professor" />
-        <activity android:name=".activity.Academia" />
-        <activity android:name=".activity.Aluno" />
+        <activity android:name=".activity.ActivityProfessor" />
+        <activity android:name=".activity.ActivityAcademia" />
+        <activity android:name=".activity.ActvityAluno" />
         <activity android:name=".activity.Cadastrar_Horario" />
-        <activity android:name=".activity.Agendamento_Aula" />
+        <activity android:name=".activity.ActivityAgendamento_Aula" />
         <activity android:name=".activity.Lista_Professor" />
         <activity android:name=".activity.Lista_Academia" />
         <activity android:name=".activity.Lista_Aluno" />

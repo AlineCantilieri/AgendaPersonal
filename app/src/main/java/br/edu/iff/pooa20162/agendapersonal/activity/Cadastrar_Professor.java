@@ -36,7 +36,7 @@ public class Cadastrar_Professor extends AppCompatActivity {
                 Professor prof = new Professor(etnome.getText().toString(), ettelefone.getText().toString(), etcpf.getText().toString(), etendereco.getText().toString(), etcref.getText().toString());
                 prof.save();
 
-                Intent intent = new Intent(Cadastrar_Professor.this, Professor.class);
+                Intent intent = new Intent(Cadastrar_Professor.this, ActivityProfessor.class);
                 startActivity(intent);
             }
         });

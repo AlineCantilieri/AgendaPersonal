@@ -20,7 +20,7 @@ public class Cadastrar_Horario extends AppCompatActivity {
 
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(Cadastrar_Horario.this, Professor.class);
+                Intent intent = new Intent(Cadastrar_Horario.this, ActivityProfessor.class);
                 startActivity(intent);
             }
         });
@@ -40,7 +40,7 @@ public class Cadastrar_Horario extends AppCompatActivity {
 
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(Cadastrar_Horario.this, Professor.class);
+                Intent intent = new Intent(Cadastrar_Horario.this, ActivityProfessor.class);
                 startActivity(intent);
             }
         });

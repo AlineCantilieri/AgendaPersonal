@@ -31,7 +31,7 @@ public class Cadastrar_Academia extends AppCompatActivity {
 
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(Cadastrar_Academia.this, Academia.class);
+                Intent intent = new Intent(Cadastrar_Academia.this, ActivityAcademia.class);
                 startActivity(intent);
 
                 br.edu.iff.pooa20162.agendapersonal.model.Academia acad = new br.edu.iff.pooa20162.agendapersonal.model.Academia(etnome.getText().toString(), etendereco.getText().toString(), ettelefone.getText().toString(), etcnpj.getText().toString());

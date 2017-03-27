@@ -20,6 +20,7 @@ public class AgendamentoAula extends SugarRecord{
         this.horario = horario;
         this.aluno = aluno;
     }
+    public AgendamentoAula(){}
     public String getModalidade() {
         return modalidade;
     }

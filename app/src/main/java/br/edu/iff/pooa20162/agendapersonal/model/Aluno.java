@@ -22,6 +22,7 @@ public class Aluno extends SugarRecord implements Parcelable{
         this.endereco = endereco;
         this.cpf = cpf;
     }
+    public Aluno(){}
 
     protected Aluno(Parcel in) {
         nome = in.readString();

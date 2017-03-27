@@ -1,8 +1,9 @@
 package br.edu.iff.pooa20162.agendapersonal.activity;
 
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
+
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -30,7 +31,7 @@ public class Cadastrar_Aluno extends AppCompatActivity {
 
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(Cadastrar_Aluno.this, Aluno.class);
+                Intent intent = new Intent(Cadastrar_Aluno.this, ActvityAluno.class);
                 startActivity(intent);
 
                 br.edu.iff.pooa20162.agendapersonal.model.Aluno al = new br.edu.iff.pooa20162.agendapersonal.model.Aluno(etnome.getText().toString(), ettelefone.getText().toString(), etcpf.getText().toString(), etendereco.getText().toString());

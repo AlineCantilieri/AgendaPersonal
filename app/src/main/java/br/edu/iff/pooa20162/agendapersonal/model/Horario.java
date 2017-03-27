@@ -25,6 +25,7 @@ public class Horario extends SugarRecord implements Parcelable{
         this.professor = professor;
         this.academia = academia;
     }
+    public Horario(){}
 
     protected Horario(Parcel in) {
         hora = in.readInt();
